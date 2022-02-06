@@ -1,0 +1,243 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  /*===== Colores =====*/
+  --first-color: #1a73e8;
+  --input-color: #80868b;
+  --border-color: #dadce0;
+
+  /*===== Fuente y tipografia =====*/
+  --body-font: "Roboto", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+  margin: 0;
+}
+.l-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form {
+  width: 360px;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+.form__title {
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.form_div {
+  position: relative;
+  height: 48px;
+  margin-bottom: 1.5rem;
+}
+.form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: var(--normal-font-size);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 0.25rem;
+  background-color: #fff;
+  color: var(--input-color);
+  font-size: var(--normal-font-size);
+  transition: 0.3s;
+}
+.form__button {
+  display: block;
+  margin-left: auto;
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: var(--normal-font-size);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form__button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+.form__input:focus + .form__label {
+  top: -0.5rem;
+  left: 0.8rem;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+.form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+  top: -0.5rem;
+  left: 0.8rem;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+.form__input:focus {
+  border: 1.5px solid var(--first-color);
+}
+
+
+/* ================================ batas wisata dan login ================================ */
+.wisata {
+  width: 860px;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.wisata_view {
+  width: 1080px;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.wisata_title {
+  /* font-weight: 500; */
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.btn-hapus {
+  display: block;
+  margin-left: auto;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: #F47174;
+  color: #fff;
+  font-size: var(--normal-font-size);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-edit {
+  display: block;
+  margin-left: auto;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: #D2D2CF;
+  color: #000;
+  font-size: var(--normal-font-size);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  text-shadow: 1px 1px 0px #fff;
+  background: #eaebec;
+  border: #ccc 1px solid;
+  width: 100%;
+}
+
+table th {
+  padding: 15px 35px;
+  border-left: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  background: #ededed;
+}
+
+table th:first-child {
+  border-left: none;
+}
+
+table tr {
+  text-align: center;
+  padding-left: 20px;
+}
+
+table td:first-child {
+  text-align: left;
+  padding-left: 20px;
+  border-left: 0;
+}
+
+table td {
+  padding: 15px 35px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  background: #fafafa;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fbfbfb),
+    to(#fafafa)
+  );
+  background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+table tr:hover td {
+  background: #f2f2f2;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f2f2f2),
+    to(#f0f0f0)
+  );
+  background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+
+
